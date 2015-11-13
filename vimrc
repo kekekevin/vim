@@ -1,6 +1,7 @@
 inoremap jk <ESC>
 let mapleader = "\<Space>"
 syntax on
+set number
 set encoding=utf-8
 set expandtab
 set ignorecase
@@ -9,6 +10,12 @@ set backspace=indent,eol,start
 set shiftwidth=2
 set tabstop=2
 set expandtab
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|node_modules|bower_components)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 " RSpec.vim mappings
 map <Leader>t :call RunCurrentSpecFile()<CR>
