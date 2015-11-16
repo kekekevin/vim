@@ -10,9 +10,10 @@ set backspace=indent,eol,start
 set shiftwidth=2
 set tabstop=2
 set expandtab
+set spell spelllang=en_us
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|node_modules|bower_components)$',
+  \ 'dir':  '\v[\/](\.git|node_modules|bower_components|tmp)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
@@ -35,6 +36,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround.git'
 
 call vundle#end()       
 filetype plugin indent on
