@@ -37,6 +37,7 @@ Plugin 'tpope/vim-bundler'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround.git'
+Plugin 'guns/vim-sexp'
 
 call vundle#end()       
 filetype plugin indent on
