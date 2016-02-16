@@ -1,6 +1,7 @@
 inoremap jk <ESC>
 let mapleader = "\<Space>"
 syntax on
+set hidden
 set number
 set encoding=utf-8
 set expandtab
