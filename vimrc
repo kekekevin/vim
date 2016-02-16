@@ -22,6 +22,7 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+map <C-n> :NERDTreeToggle<CR>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -37,6 +38,8 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround.git'
 Plugin 'guns/vim-sexp'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()       
 filetype plugin indent on
