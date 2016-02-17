@@ -11,6 +11,8 @@ set backspace=indent,eol,start
 set shiftwidth=2
 set tabstop=2
 set expandtab
+set list
+set list listchars=tab:>-,trail:·,extends:>
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|node_modules|bower_components|tmp|target|node_modules|bower_components|dist|build)$',
