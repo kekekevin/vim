@@ -14,6 +14,8 @@ set expandtab
 set list
 set list listchars=tab:>-,trail:·,extends:>
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](\.git|node_modules|bower_components|tmp|target|node_modules|bower_components|dist|build)$',
   \ 'file': '\v\.(exe|so|dll|class)$',
@@ -43,6 +45,7 @@ Plugin 'tpope/vim-surround.git'
 Plugin 'guns/vim-sexp'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 call vundle#end()       
 filetype plugin indent on
