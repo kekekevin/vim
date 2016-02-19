@@ -1,6 +1,5 @@
 inoremap jk <ESC>
 let mapleader = "\<Space>"
-syntax on
 set hidden
 set number
 set encoding=utf-8
@@ -46,6 +45,11 @@ Plugin 'guns/vim-sexp'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'mattn/emmet-vim'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()       
 filetype plugin indent on
+syntax enable
+set background=dark
+colorscheme solarized
