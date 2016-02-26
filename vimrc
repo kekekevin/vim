@@ -48,7 +48,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
 Plugin 'altercation/vim-colors-solarized'
 
-call vundle#end()       
+call vundle#end()
 filetype plugin indent on
 syntax enable
 set background=dark
