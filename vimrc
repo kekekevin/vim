@@ -70,7 +70,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
-plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
