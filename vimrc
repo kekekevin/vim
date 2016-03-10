@@ -37,7 +37,7 @@ map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
-map <C-n> :NERDTreeToggle<CR>
+map <F4> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 set nocompatible              " be iMproved, required
