@@ -1,5 +1,19 @@
 inoremap jk <ESC>
 let mapleader = "\<Space>"
+
+" Move to the next buffer
+nmap <leader>l :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
+
 set hidden
 set number
 set encoding=utf-8
@@ -19,6 +33,9 @@ set statusline+=%*
 
 set laststatus=2
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -33,12 +50,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_cmd = 'CtrlPMRU'
 
-" RSpec.vim mappings
-map <Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader>s :call RunNearestSpec()<CR>
-map <Leader>l :call RunLastSpec()<CR>
-map <Leader>a :call RunAllSpecs()<CR>
-
+nmap <F3> :NERDTreeFind<CR>
 map <F4> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
