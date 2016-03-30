@@ -85,6 +85,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
+Plugin 'airblade/vim-rooter'
 
 call vundle#end()
 filetype plugin indent on
