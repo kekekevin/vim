@@ -85,10 +85,10 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
-Plugin 'airblade/vim-rooter'
+Plugin 'jpo/vim-railscasts-theme'
 
 call vundle#end()
 filetype plugin indent on
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme railscasts
