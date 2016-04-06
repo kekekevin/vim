@@ -86,6 +86,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'jpo/vim-railscasts-theme'
+Plugin 'tpope/vim-repeat'
 
 call vundle#end()
 filetype plugin indent on
