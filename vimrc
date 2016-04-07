@@ -95,6 +95,7 @@ Plugin 'rking/ag.vim'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'tpope/vim-repeat'
 Plugin 'pbrisbin/vim-mkdir'
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()
 filetype plugin indent on
