@@ -50,6 +50,13 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_cmd = 'CtrlPMRU'
 
+"rspec
+let g:rspec_runner = "os_x_iterm"
+map <Leader>rt :call RunCurrentSpecFile()<CR>
+map <Leader>rs :call RunNearestSpec()<CR>
+map <Leader>rl :call RunLastSpec()<CR>
+map <Leader>ra :call RunAllSpecs()<CR>
+
 nmap <F3> :NERDTreeFind<CR>
 map <F4> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
@@ -87,6 +94,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'rking/ag.vim'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'tpope/vim-repeat'
+Plugin 'pbrisbin/vim-mkdir'
 
 call vundle#end()
 filetype plugin indent on
