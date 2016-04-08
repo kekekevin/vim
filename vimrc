@@ -26,6 +26,7 @@ set tabstop=2
 set expandtab
 set list
 set list listchars=tab:>-,trail:·,extends:>
+set mouse=a
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -53,7 +54,7 @@ nmap <leader>. :CtrlPTag<CR>
 
 "rspec
 let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "!bundle exec rspec -c -f d {spec}"
+let g:rspec_command = "Dispatch bundle exec rspec -c -f d {spec}"
 map <Leader>rt :call RunCurrentSpecFile()<CR>
 map <Leader>rs :call RunNearestSpec()<CR>
 map <Leader>rl :call RunLastSpec()<CR>
@@ -99,6 +100,7 @@ Plugin 'pbrisbin/vim-mkdir'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rbenv'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-dispatch'
 
 call vundle#end()
 filetype plugin indent on
