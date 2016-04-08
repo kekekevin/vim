@@ -76,7 +76,6 @@ Plugin 'thoughtbot/vim-rspec'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround.git'
 Plugin 'guns/vim-sexp'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'mattn/emmet-vim'
@@ -98,6 +97,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rbenv'
+Plugin 'vim-ruby/vim-ruby'
 
 call vundle#end()
 filetype plugin indent on
