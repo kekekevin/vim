@@ -49,6 +49,7 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 let g:ctrlp_cmd = 'CtrlPMRU'
+nmap <leader>. :CtrlPTag<CR>
 
 "rspec
 let g:rspec_runner = "os_x_iterm"
