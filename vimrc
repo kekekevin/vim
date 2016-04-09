@@ -14,6 +14,8 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
 
+autocmd FileType ruby nmap <F5> :!ruby %<cr>
+
 set hidden
 set number
 set encoding=utf-8
