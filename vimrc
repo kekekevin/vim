@@ -12,7 +12,11 @@ nmap <leader>h :bprevious<CR>
 nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
+
 nmap <leader>bl :ls<CR>
+
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
 
 autocmd FileType ruby nmap <F5> :!ruby %<cr>
 
