@@ -107,6 +107,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-rbenv'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-dispatch'
+Plugin 'gioele/vim-autoswap'
 
 call vundle#end()
 filetype plugin indent on
