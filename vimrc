@@ -49,6 +49,9 @@ set statusline+=%{fugitive#statusline()}
 "key mapping for saving file
 nmap <C-s> :w<CR>
 
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
 set statusline+=%=      "left/right separator
 set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
