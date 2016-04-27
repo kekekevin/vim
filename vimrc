@@ -36,6 +36,9 @@ set mouse=a
 set ttymouse=xterm2
 set textwidth=80
 set colorcolumn=+1
+set nobackup
+set nowritebackup
+set noswapfile
 
 "statusline setup
 set statusline=%f       "tail of the filename
