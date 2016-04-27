@@ -141,6 +141,7 @@ Plugin 'tpope/vim-rbenv'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-dispatch'
 Plugin 'gioele/vim-autoswap'
+Plugin 'tmhedberg/matchit'
 
 call vundle#end()
 filetype plugin indent on
