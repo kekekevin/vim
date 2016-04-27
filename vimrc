@@ -33,11 +33,23 @@ set expandtab
 set list
 set list listchars=tab:>-,trail:·,extends:>
 set mouse=a
+set ttymouse=xterm2
+set textwidth=80
+set colorcolumn=+1
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"statusline setup
+set statusline=%f       "tail of the filename
 
+"Git
+set statusline+=%{fugitive#statusline()}
+
+"key mapping for saving file
+nmap <C-s> :w<CR>
+
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through file
 set laststatus=2
 
 let g:airline#extensions#tabline#enabled = 1
