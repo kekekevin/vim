@@ -39,6 +39,7 @@ set colorcolumn=+1
 set nobackup
 set nowritebackup
 set noswapfile
+set cursorline
 
 "statusline setup
 set statusline=%f       "tail of the filename
