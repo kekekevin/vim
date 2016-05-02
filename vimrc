@@ -95,7 +95,7 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_cmd = 'CtrlPMRU'
 nmap <leader>. :CtrlPTag<CR>
 
-"rspec
+" rspec
 let g:rspec_runner = "os_x_iterm"
 let g:rspec_command = "Dispatch bundle exec rspec -c -f d {spec}"
 map <Leader>rt :call RunCurrentSpecFile()<CR>
@@ -106,6 +106,10 @@ map <Leader>ra :call RunAllSpecs()<CR>
 nmap <F3> :NERDTreeFind<CR>
 map <F4> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
+
+" open nerdtree automatically on startup if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
