@@ -150,6 +150,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-dispatch'
 Plugin 'gioele/vim-autoswap'
 Plugin 'tmhedberg/matchit'
+Plugin 'heartsentwined/vim-emblem'
 
 call vundle#end()
 filetype plugin indent on
