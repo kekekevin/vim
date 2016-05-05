@@ -41,13 +41,16 @@ set nowritebackup
 set noswapfile
 set cursorline
 
-"statusline setup
+" share clipboard
+set clipboard=unnamed
+
+" statusline setup
 set statusline=%f       "tail of the filename
 
-"Git
+" Git
 set statusline+=%{fugitive#statusline()}
 
-"key mapping for saving file
+" key mapping for saving file
 nmap <C-s> :w<CR>
 
 " Switch between the last two files
