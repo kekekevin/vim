@@ -98,13 +98,13 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_cmd = 'CtrlPMRU'
 nmap <leader>. :CtrlPTag<CR>
 
-" rspec
-let g:rspec_runner = "os_x_iterm"
-let g:rspec_command = "Dispatch bundle exec rspec -c -f d {spec}"
-map <Leader>rt :call RunCurrentSpecFile()<CR>
-map <Leader>rs :call RunNearestSpec()<CR>
-map <Leader>rl :call RunLastSpec()<CR>
-map <Leader>ra :call RunAllSpecs()<CR>
+" test
+nmap <silent> <leader>rs :TestNearest<CR>
+nmap <silent> <leader>rt :TestFile<CR>
+nmap <silent> <leader>ra :TestSuite<CR>
+nmap <silent> <leader>rl :TestLast<CR>
+nmap <silent> <leader>rv :TestVisit<CR>
+let test#strategy = "dispatch"
 
 nmap <F3> :NERDTreeFind<CR>
 map <F4> :NERDTreeToggle<CR>
@@ -124,7 +124,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
-Plugin 'thoughtbot/vim-rspec'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround.git'
 Plugin 'guns/vim-sexp'
@@ -154,6 +153,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'gioele/vim-autoswap'
 Plugin 'tmhedberg/matchit'
 Plugin 'heartsentwined/vim-emblem'
+Plugin 'janko-m/vim-test'
 
 call vundle#end()
 filetype plugin indent on
