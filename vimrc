@@ -50,9 +50,6 @@ set statusline=%f       "tail of the filename
 " Git
 set statusline+=%{fugitive#statusline()}
 
-" key mapping for saving file
-nmap <C-s> :w<CR>
-
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
