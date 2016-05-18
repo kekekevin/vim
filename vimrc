@@ -151,6 +151,7 @@ Plugin 'gioele/vim-autoswap'
 Plugin 'tmhedberg/matchit'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'janko-m/vim-test'
+Plugin 'wellle/targets.vim'
 
 call vundle#end()
 filetype plugin indent on
