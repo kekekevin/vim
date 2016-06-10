@@ -99,7 +99,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|class)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
-let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_cmd = 'CtrlPMixed'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 nmap <leader>. :CtrlPTag<CR>
 
 " test
