@@ -101,6 +101,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_use_caching = 0
 nmap <leader>. :CtrlPTag<CR>
 
 " test
