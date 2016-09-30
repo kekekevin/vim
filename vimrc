@@ -161,6 +161,7 @@ Plugin 'tmhedberg/matchit'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'janko-m/vim-test'
 Plugin 'wellle/targets.vim'
+Plugin 'jreybert/vimagit'
 
 call vundle#end()
 filetype plugin indent on
