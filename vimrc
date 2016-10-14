@@ -168,6 +168,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'wellle/targets.vim'
 Plugin 'jreybert/vimagit'
 Plugin 'tomasr/molokai'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()
 filetype plugin indent on
