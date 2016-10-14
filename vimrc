@@ -22,6 +22,9 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
+" Remove highlights with leader + enter
+nmap <Leader><CR> :nohlsearch<cr>
+
 nmap ]h <Plug>GitGutterNextHunk
 nmap [h <Plug>GitGutterPrevHunk
 
@@ -47,6 +50,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 set cursorline
+set hlsearch
+set incsearch
 
 " share clipboard
 set clipboard=unnamed
@@ -162,9 +167,10 @@ Plugin 'heartsentwined/vim-emblem'
 Plugin 'janko-m/vim-test'
 Plugin 'wellle/targets.vim'
 Plugin 'jreybert/vimagit'
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 filetype plugin indent on
 syntax enable
 set background=dark
-colorscheme railscasts
+colorscheme molokai
