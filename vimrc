@@ -167,8 +167,8 @@ Plugin 'heartsentwined/vim-emblem'
 Plugin 'janko-m/vim-test'
 Plugin 'wellle/targets.vim'
 Plugin 'jreybert/vimagit'
-Plugin 'tomasr/molokai'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 filetype plugin indent on
