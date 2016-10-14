@@ -174,4 +174,7 @@ call vundle#end()
 filetype plugin indent on
 syntax enable
 set background=dark
+let g:molokai_original=1
+let g:rehash256=1
+set t_Co=256
 colorscheme molokai
