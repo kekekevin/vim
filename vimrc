@@ -122,8 +122,8 @@ map <F4> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " open nerdtree automatically on startup if no file specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+"autocmd StdinReadPre * let s:std_in=1
+"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -167,8 +167,10 @@ Plugin 'heartsentwined/vim-emblem'
 Plugin 'janko-m/vim-test'
 Plugin 'wellle/targets.vim'
 Plugin 'jreybert/vimagit'
-Plugin 'jiangmiao/auto-pairs'
 Plugin 'tomasr/molokai'
+Plugin 'Yggdroot/indentLine'
+Plugin 'terryma/vim-expand-region'
+Plugin 'itchyny/vim-cursorword'
 
 call vundle#end()
 filetype plugin indent on
