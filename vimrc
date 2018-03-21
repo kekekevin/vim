@@ -118,7 +118,7 @@ nmap <silent> <leader>rv :TestVisit<CR>
 let test#strategy = "dispatch"
 
 nmap <F3> :NERDTreeFind<CR>
-map <F4> :NERDTreeToggle<CR>
+nmap <F2> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 " open nerdtree automatically on startup if no file specified
