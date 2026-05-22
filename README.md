@@ -1,11 +1,10 @@
 # vim
 
-vim configurations for portability
+Portable vim configuration.
+
 ```sh
-cd
-git clone https://github.com/kekekevin/vim.git .vim
-echo "runtime vimrc" > ~/.vimrc
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+git clone https://github.com/kekekevin/vim.git ~/.vim
+~/.vim/setup.sh
 ```
-After finish YouCompleteMe installation
+
+`setup.sh` creates `~/.vimrc` (loading this repo's `vimrc`), installs Vundle, then runs `:PluginInstall` to pull all plugins listed in `vimrc`.
