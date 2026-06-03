@@ -1,0 +1,53 @@
+inoremap jk <ESC>
+let mapleader = " "
+
+" Search preferences
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Remove highlights with leader + enter
+nmap <Leader><CR> :nohlsearch<cr>
+
+" Easier split navigation
+nnoremap <C-j> :action VimWindowDown<CR>
+nnoremap <C-k> :action VimWindowUp<CR>
+nnoremap <C-l> :action VimWindowRight<CR>
+nnoremap <C-h> :action VimWindowLeft<CR>
+
+" allow line shifting up/down - mac only
+nnoremap ∆ :action MoveLineDown<CR>
+nnoremap ˚ :action MoveLineUp<CR>
+inoremap ∆ :action MoveLineDown<CR>
+inoremap ˚ :action MoveLineUp<CR>
+vnoremap ∆ :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action MoveLineDown<CR>
+vnoremap ˚ :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action MoveLineUp<CR>
+
+" pc alternative
+nnoremap <A-j> :action MoveLineDown<CR>
+nnoremap <A-k> :action MoveLineUp<CR>
+inoremap <A-j> :action MoveLineDown<CR>
+inoremap <A-k> :action MoveLineUp<CR>
+vnoremap <A-j> :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action MoveLineDown<CR>
+vnoremap <A-k> :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action MoveLineUp<CR>
+
+map <C-p> :action GotoClass<CR>
+map <C-]> :action GotoDeclaration<CR>
+
+map <C-o> :action Back<CR>
+map <C-i> :action Forward<CR>
+
+map <F4> :action ActivateProjectToolWindow<CR>
+
+nmap <leader>l :action NextTab<CR>
+
+nmap <leader>h :action PreviousTab<CR>
+
+nnoremap <leader>c<space> :action CommentByLineComment<CR>
+vnoremap <leader>c<space> :<bs><bs><bs><bs><bs>action VimVisualSwapSelections<cr>:action CommentByLineComment<CR>
+
+map <leader>bq :action CloseContent<CR>
+
+set clipboard+=unnamed
+set surround

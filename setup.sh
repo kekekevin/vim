@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Bootstrap: write ~/.vimrc to load this repo's vimrc, install Vundle,
-# and pull every plugin listed in vimrc.
+# pull every plugin listed in vimrc, and point ~/.ideavimrc at this
+# repo's ideavimrc.
 #
 # Usage:
 #   git clone https://github.com/kekekevin/vim.git ~/.vim
@@ -10,6 +11,7 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VIMRC="$HOME/.vimrc"
+IDEAVIMRC="$HOME/.ideavimrc"
 VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
 
 say() { printf '\n\033[1;34m==>\033[0m %s\n' "$*"; }
@@ -36,5 +38,12 @@ fi
 
 say "Installing plugins (vim +PluginInstall +qall)"
 vim +PluginInstall +qall < /dev/null
+
+if ! grep -qF "source ~/.vim/ideavimrc" "$IDEAVIMRC" 2>/dev/null; then
+  say "Writing $IDEAVIMRC"
+  echo "source ~/.vim/ideavimrc" > "$IDEAVIMRC"
+else
+  say "$IDEAVIMRC already configured"
+fi
 
 say "Done."
